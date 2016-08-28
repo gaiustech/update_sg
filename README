@@ -1,0 +1,9 @@
+An overcomplicated way to deal with my ADSL provider changing my IP address.
+Spins up a micro instance on AWS, runs a trivial app via Docker to echo my IP
+address back to me, and updates my security group to allow inbound SSH to any
+subsequently created instances. It would be nicer I guess to run the container
+directly...
+
+Usage is simple, just run update_sg.sh, assuming your AWS CLI is already setup.
+
+Gaius 28-AUG-2016
